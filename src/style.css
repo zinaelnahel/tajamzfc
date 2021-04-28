@@ -107,6 +107,8 @@ section {
 }
 body {
   line-height: 1;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.75rem;
 }
 ol,
 ul {
@@ -127,3 +129,56 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+#expertise {
+  padding: 5% 0;
+}
+
+#expertise table {
+  margin-left:20%;
+  margin-right: 20%;
+  text-align:center;
+  display: grid;
+  border-collapse: collapse; 
+
+}
+
+
+#expertise thead {
+  padding-bottom: 3rem;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+}
+
+#expertise th{
+  line-height: 1.5rem;
+}
+
+#expertise h4 {
+  font-size: 1.25rem;
+}
+
+#expertise hr {
+  width: 15%;
+}
+
+
+
+
+#expertise h5 {
+  font-weight:900;
+  margin: 1rem;
+}
+
+#expertise td{
+  padding: 5%;
+line-height: 1.25rem;
+}
+
+#expertise td + td { 
+  border-left: 0.5px solid	rgb(231, 230, 225); 
+}
+
+#expertise tr + tr { border-top: 0.5px solid rgb(231, 230, 225);  }
