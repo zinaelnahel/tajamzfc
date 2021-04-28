@@ -139,17 +139,17 @@ table {
 
 
 
-body {
+/* body {
   width: 70vw;
   margin: 0 auto;
-}
+} */
 
 /* HEADER*/
 /* General */
 
 header {
   align-items: center;
-  background-image: url(/images/bgk-header.png);
+  background-image: url("/images/bgk-header.png");
   background-size: cover;
   color: white;
   display: flex;
