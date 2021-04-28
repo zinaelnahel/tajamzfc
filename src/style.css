@@ -227,7 +227,6 @@ nav a:hover {
   justify-content: center;
   margin: 5rem 0;
   text-align: center;
-  height: 70%;
   width: 50%;
 }
 
@@ -243,16 +242,103 @@ nav a:hover {
   width: 10%;
 }
 
-.header-content button {
+.button-franz {
   padding: 0.5rem 0.5rem;
   color: #00e0d0;
   background-color: transparent;
   border: 1px solid #00e0d0;
   border-radius: 5%;
-  margin-top: 2rem;
   text-transform: uppercase;
 }
 
-.header-content button:hover {
-  box-shadow: 0 0 0 1.5px #00e0d0;
+header .button-franz {
+  margin-top: 2rem;
+}
+
+
+.button-franz:hover {
+  box-shadow: 1.5px #00e0d0;
+  font-weight: bold;
+}
+
+.button-franz:visited {
+  box-shadow: 1.5px #00e0d0;
+  font-weight: bold;
+}
+
+
+
+
+/* Section "Story" */
+
+#story {
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.story-image-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2rem 2rem;
+}
+
+.story-image-container img {
+  max-width: 100%;
+}
+
+.story-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 2rem;
+}
+
+.story-text-container * {
+  margin-bottom: 1.4rem;
+}
+
+.subheading-franz {
+  font: bold 1.0rem 'Roboto Slab', serif;
+  text-transform: uppercase;
+}
+
+.story-media-container {
+  align-items: center;
+  background-image: url("/images/bgk-middle.png");
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-area: 2/1/span2/3;
+  height: 80vh;
+}
+
+.video-player-heading {
+  padding-top: 1.4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@media only screen and (max-width:600px) {
+  #story {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .story-image-container {
+    align-self: center;
+  }
+
+  .story-text-container {
+    align-items: center;
+  }
+
+  .story-image-container {
+    width: 20%;
+  }
 }
