@@ -139,10 +139,10 @@ table {
 
 
 
-/* body {
-  width: 70vw;
-  margin: 0 auto;
-} */
+body {
+  font: 0.75rem 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
 
 /* HEADER*/
 /* General */
@@ -154,8 +154,6 @@ header {
   color: white;
   display: flex;
   flex-direction: column;
-  font: 0.8rem 'Roboto', sans-serif;
-  height: 60vh;
   text-align: center;
 }
 
@@ -175,6 +173,8 @@ header h1 {
   align-items: center;
   display: flex;
   font: 0.8rem 'Roboto', sans-serif;
+  flex: 1;
+  flex-wrap: wrap;
   flex-direction: row;
   padding: 0.2rem;
   width: 100%;
@@ -188,15 +188,21 @@ header h1 {
   width: 50%;
 }
 
+.logo img {
+  margin: 0.5rem 0;
+}
+
 .logo h2 {
   padding: 0 0.4rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
+  color: #16aac4;
 }
 
 nav {
   width: 50%;
   display: flex;
   justify-content: flex-start;
+
 }
 
 
@@ -207,20 +213,29 @@ nav a:hover {
 .nav-list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .nav-list li {
-  padding: 0 0.2rem;
+  padding: 0 0.5rem;
+  text-transform: uppercase;
 }
 
 /* Header text */
 
 .header-content {
   display: flex;
+  flex: 10;
   flex-direction: column;
   justify-content: center;
+  margin: 7rem 0;
+  text-align: center;
   height: 70%;
   width: 50%;
+}
+
+.header-content * {
+  margin: 0.7rem auto;
 }
 
 .header-content hr {
@@ -228,6 +243,19 @@ nav a:hover {
   background-color: #00e0d0;
   color: #00e0d0;
   height: 1px;
-  margin: 1rem auto;
   width: 10%;
+}
+
+.header-content button {
+  padding: 0.5rem 0.5rem;
+  color: #00e0d0;
+  background-color: transparent;
+  border: 1px solid #00e0d0;
+  border-radius: 5%;
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
+
+.header-content button:hover {
+  box-shadow: 0 0 0 1.5px #00e0d0;
 }
