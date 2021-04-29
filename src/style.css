@@ -463,6 +463,11 @@ td .button-franz {
   margin: 0px;
 }
 
+.section-contacts__form {
+  max-height: 600px;
+  position: re;
+}
+
 .section-contacts__title {
   padding-bottom: 33px;
   font-size: 22px;
@@ -473,7 +478,14 @@ td .button-franz {
   text-transform: uppercase;
   text-align: center;
 }
+.section-contacts__clients {
+  position: relative;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
 
+  width: 100%;
+}
 .section-contacts__input {
   display: block;
   margin-bottom: 5px;
@@ -491,10 +503,10 @@ td .button-franz {
   position: relative;
 }
 .section-contacts__feedback {
+  margin-top: 20px;
+  max-width: 450px;
+  margin-left: 80px;
   display: block;
-  margin-top: 60px;
-  max-width: 500px;
-  margin-left: 250px;
 }
 
 .section-contacts__textarea {
@@ -517,6 +529,29 @@ td .button-franz {
 }
 .section-contacts__client img {
   vertical-align: middle;
+}
+.section-contacts__button {
+  display: inline-block;
+  padding: 11px 14px;
+  outline: none;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border: 1px solid #00e0d0;
+  background: 0 0;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: 400;
+  color: #00e0d0;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: color 0.2s linear, border-color 0.2s linear,
+    -webkit-box-shadow 0.2s linear;
+  transition: box-shadow 0.2s linear, color 0.2s linear,
+    border-color 0.2s linear;
+  transition: box-shadow 0.2s linear, color 0.2s linear,
+    border-color 0.2s linear, -webkit-box-shadow 0.2s linear;
 }
 
 footer {
@@ -670,4 +705,8 @@ a:link {
 
 .footerbottom {
   padding: 5px 20px;
+}
+.section-contacts__clients {
+  margin-left: 600px;
+  bottom: 515px;
 }
