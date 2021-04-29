@@ -248,6 +248,7 @@ nav a:hover {
   border: 1px solid #00e0d0;
   border-radius: 5%;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 header .button-franz {
@@ -255,13 +256,9 @@ header .button-franz {
 }
 
 .button-franz:hover {
-  box-shadow: 1.5px #00e0d0;
+  box-shadow: 0 0 2px 2px #00e0d0;
   font-weight: bold;
-}
-
-.button-franz:visited {
-  box-shadow: 1.5px #00e0d0;
-  font-weight: bold;
+  transition: 0.2s;
 }
 
 /* Section "Story" */
@@ -309,6 +306,16 @@ header .button-franz {
   justify-content: center;
   grid-area: 2/1 / span2/3;
   height: 80vh;
+}
+
+.story-media-wrapper {
+  display:flex; 
+  flex-direction: column;
+}
+
+.story-media-wrapper:hover {
+  text-shadow: 0 0 2px white;
+  cursor: pointer;
 }
 
 .video-player-heading {
