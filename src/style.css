@@ -108,11 +108,9 @@ section {
 }
 
 body {
-
   line-height: 1;
   font-family: "Roboto", sans-serif;
   font-size: 0.75rem;
-
 }
 
 ol,
@@ -137,9 +135,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-
-
 
 /* Franz' CSS */
 
@@ -314,7 +309,7 @@ header .button-franz {
 }
 
 .story-media-wrapper {
-  display:flex; 
+  display: flex;
   flex-direction: column;
 }
 
@@ -348,9 +343,6 @@ header .button-franz {
     width: 20%;
   }
 }
-
-
-
 
 #contact {
   position: relative;
@@ -413,6 +405,10 @@ header .button-franz {
   max-width: 100%;
   margin-bottom: 60px;
 }
+.section-contacts__client img {
+  vertical-align: middle;
+}
+
 footer {
   background-image: url(/images/footerimg.png);
   padding: 50px;
@@ -564,6 +560,4 @@ a:link {
 
 .footerbottom {
   padding: 5px 20px;
-
 }
-
