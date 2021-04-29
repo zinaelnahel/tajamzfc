@@ -14,7 +14,7 @@
   <body>
     <!-- Franz header and story -->
     <header></header>
-    <main>
+    
       <section id="story"></section>
 
       <!-- Claudia expertise and team  -->
@@ -22,28 +22,122 @@
       <section id="team"></section>
 
       <!-- Zina contact and footer -->
-      <section id="contact"></section>
+      <div id="contact">
+      
+        <div class="section-contacts__feedback">
+          <div class="section-contacts__title">Give Us A Good News</div>
+          <div class="section-contacts__form">
+            <form action="#">
+              <input
+                name="name"
+                class="section-contacts__input"
+                placeholder="Name"
+              />
+              <input
+                name="email"
+                class="section-contacts__input"
+                placeholder="Email"
+              />
+              <input
+                name="subject"
+                class="section-contacts__input"
+                placeholder="Subject"
+              /><textarea
+                name="message"
+                class="section-contacts__input section-contacts__textarea"
+                placeholder="Your Message"
+              ></textarea><button class="section-contacts__button button button_wide-2">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div></div>
+      </section>
     </main>
-
+  
     <footer>
-      <div class="footersection">
-        <div class="footertop">
-          <div class="footerabout">
-            <div class="footertext">
-              lorem quis bibendum auctor, nisi elit consequat ipsum, nec
-              sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare
-              odio non mauris vitae erat in elit
+      <div class="footer section">
+        <div class="flex-container">
+          <div class="footertop">
+            <div class="footerlogo">
+              <a href="/" class="footerlogo-link"><h1>tajam</h1></a>
+            </div>
+            <div class="footerabout">
+              <div class="footertext">
+                lorem quis bibendum auctor, nisi elit consequat ipsum, nec
+                sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare
+                odio non mauris vitae erat in elit
+              </div>
+            </div>
+          </div>
+
+          <div class="footerinfo">
+            <div class="footertitle">Our Studio</div>
+            <div class="footerlocation">
+              Ruko cucruk, Jl. Radio luar dalem jos<br />No.12 - 13, Kalideres -
+              Jakarta Barat<br />11480 - Indonesia
+            </div>
+            <div class="footerphone">(+62) 21-2224 3333</div>
+          </div>
+          <div class="footernewsletter">
+            <div class="footertitle">Stay In Touch</div>
+            <div class="footerform">
+              <form action="#">
+                <input
+                  name="email"
+                  class="footerinput"
+                  placeholder="Subscribe our newsletter"
+                />
+                <button class="footerbutton"></button>
+              </form>
+            </div>
+            <div class="footersocials">
+              <a
+                href="http://www.facebook.com"
+                class="footer__social-link icon icon-facebook"
+                ><img src="images/facebook.png" alt=""
+              /></a>
+              <a
+                href="http://www.twitter.com"
+                class="footer__social-link icon icon-twitter"
+                ><img src="images/twitter.png" alt=""
+              /></a>
+              <a
+                href="http://www.dribbble.com"
+                class="footer__social-link icon icon-dribbble"
+                ><img src="images/dribbble.png" alt=""
+              /></a>
+              <a
+                href="http://www.instagram.com"
+                class="footer__social-link icon icon-instagram"
+                ><img src="images/instagram.png" alt="" />
+              </a>
+              <a
+                href="http://www.google.com"
+                class="footer__social-link icon icon-google"
+                ><img src="images/gplus.png" alt=""
+              /></a>
+              <a
+                href="http://www.youtube.com"
+                class="footer__social-link icon icon-youtube"
+                ><img src="images/youtube.png" alt="broken picture"
+              /></a>
             </div>
           </div>
         </div>
-        <ul class="footernav">
-          <li>
-            <a href="#" class="footernav-link"> HELP</a>
-          </li>
-          <li>TERMS & CONDITION</li>
-          <li>PRIVACY</li>
-        </ul>
-      </div>
+        <div class="footerbottom">
+          <ul class="footernav">
+            <li>
+              <a href="#" class="footernav-link"> Help</a>
+            </li>
+            <li>
+              <a href href="#" class="footernav-link">Terms & Condition</a>
+            </li>
+            <li><a href="#" class="footernav-link">Privacy </a></li>
+            <li class="footercopy">Copyright © 2015 - Tajem Creative</li>
+          </ul>
+        </div>
+      </d>
     </footer>
   </body>
 </html>
