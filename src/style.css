@@ -532,26 +532,28 @@ padding: 2rem;
 }
 
 .footerbutton {
-  display: block;
-  float: right;
-  width: 70px;
-  height: 44px;
-  outline: none;
-  border: none;
-  background: url(/images/paper122.png) 50% no-repeat, rgba(255, 255, 255, 0.5);
+ display: flex; 
+ background-color: white;
+ margin-inline-start: 0.3rem;
+ min-width: 50px;
+ align-items: center;
+ justify-content: center;
+ opacity: 50%;
+}
+
+.footerbutton:hover {
+  opacity: 100%;
+  transition: 0.5s;
   cursor: pointer;
-  filter: brightness(180%);
-  margin-left: 10px;
 }
+
 .footersocials {
-  margin-top: 30px;
+  margin-top: 1rem;
 }
+
 .footerinput {
-  display: block;
-  float: left;
   color: #fff;
-  height: 10px;
-  padding: 15.5px 20px;
+  padding: 0.5rem 1rem;
   outline: none;
   border: 1px solid rgba(255, 255, 255, 0.5);
   background: 0 0;
@@ -560,27 +562,24 @@ padding: 2rem;
 .footernav {
   display: flex;
   flex-direction: row;
-  align-items: stretch;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   color: white;
-  min-height: 1px;
   text-decoration: none;
-  margin-left: 80px;
-  padding-right: 38px;
-  margin-top: 30px;
+  flex: 2;
+  padding-bottom: 2rem;
+
 }
+
 .footernav-link {
   color: white;
-  font-size: 14px;
-  line-height: 1;
   text-transform: uppercase;
+  padding: 0 2rem;
 }
 
 .footercopy {
   color: white;
+  flex: 1;
   text-align: right;
-  margin-left: 500px;
-  margin-right: 150px;
 }
 
 a:link {
@@ -603,8 +602,8 @@ a:link {
 }
 
 .footerform {
-  margin-top: 3px;
-  padding-bottom: 27px;
+  display: flex;
+  flex-direction: row;
 }
 
 .footerphone {
@@ -620,7 +619,7 @@ a:link {
 }
 
 .footerlocation img {
-  margin-right: 0.2rem;
+  margin-right: 0.5rem;
 }
 
 .footer-logo {
@@ -641,6 +640,7 @@ padding: 1rem 0;
   float: right;
   margin-right: 150px;
 } */
+
 .footerinfo {
   display: flex;
   flex-direction: column;
@@ -651,10 +651,11 @@ padding: 1rem 0;
 .footertitle {
   display: flex;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 0rem;
   text-transform: uppercase;
   color: white;
   height: 50px;
+  font-weight: bold;
 }
 
 .footerbottom {
