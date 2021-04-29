@@ -108,11 +108,9 @@ section {
 }
 
 body {
-
   line-height: 1;
   font-family: "Roboto", sans-serif;
   font-size: 0.75rem;
-
 }
 
 ol,
@@ -137,9 +135,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-
-
 
 /* Franz' CSS */
 
@@ -314,7 +309,7 @@ header .button-franz {
 }
 
 .story-media-wrapper {
-  display:flex; 
+  display: flex;
   flex-direction: column;
 }
 
@@ -372,7 +367,6 @@ header .button-franz {
   justify-content: center;
 }
 
-
 .tabheader-h4 {
   font-size: 1.25rem;
 }
@@ -380,7 +374,7 @@ header .button-franz {
 .tabhr {
   height: 1px;
   width: 15%;
-  background-color:grey;
+  background-color: grey;
   border: none;
 }
 
@@ -399,7 +393,7 @@ td h5 {
 }
 
 #expertise tbody p {
-  color: rgb(128,128,128);
+  color: rgb(128, 128, 128);
   padding: 3%;
 }
 
@@ -417,7 +411,6 @@ td h5 {
 }
 
 /* Team Section Specific Styling */
-
 
 #team {
   background-image: url("/images/bgk-header.png");
@@ -445,23 +438,21 @@ td h5 {
   background: white;
 }
 
-#team tbody p{
-color: rgb(231, 230, 225, 0.6);
-margin-bottom: 1rem;
-margin-top: -10px;
+#team tbody p {
+  color: rgb(231, 230, 225, 0.6);
+  margin-bottom: 1rem;
+  margin-top: -10px;
 }
 
 tfoot {
   margin: 3%;
   display: flex;
   justify-content: center;
-  
 }
 
 td .button-franz {
-margin-top: 13%;
+  margin-top: 13%;
 }
-
 
 #contact {
   position: relative;
@@ -524,6 +515,10 @@ margin-top: 13%;
   max-width: 100%;
   margin-bottom: 60px;
 }
+.section-contacts__client img {
+  vertical-align: middle;
+}
+
 footer {
   background-image: url(/images/footerimg.png);
   padding: 50px;
@@ -675,4 +670,4 @@ a:link {
 
 .footerbottom {
   padding: 5px 20px;
-
+}
