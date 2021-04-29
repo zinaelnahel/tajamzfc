@@ -108,11 +108,10 @@ section {
 }
 
 body {
-
-  line-height: 1;
+  line-height: 1.25rem;
   font-family: "Roboto", sans-serif;
   font-size: 0.75rem;
-
+  box-sizing: border-box;
 }
 
 ol,
@@ -143,10 +142,6 @@ table {
 
 /* Franz' CSS */
 
-body {
-  font: 0.75rem "Roboto", sans-serif;
-  box-sizing: border-box;
-}
 
 /* HEADER*/
 /* General */
@@ -193,7 +188,7 @@ header h1 {
   margin: 0.5rem 0;
 }
 
-.logo h2 {
+.logo-subheading {
   padding: 0 0.4rem;
   font-size: 1.3rem;
   color: #16aac4;
@@ -274,14 +269,17 @@ header .button-franz {
   grid-template-columns: 1fr 1fr;
 }
 
+
 .story-image-container {
   display: flex;
   justify-content: flex-end;
   padding: 2rem 2rem;
+  margin-inline-start: 20%;
 }
 
 .story-image-container img {
   max-width: 100%;
+ 
 }
 
 .story-text-container {
@@ -290,6 +288,7 @@ header .button-franz {
   justify-content: center;
   align-items: flex-start;
   padding: 2rem 2rem;
+  margin-inline-end: 20%;
 }
 
 .story-text-container * {
@@ -329,25 +328,6 @@ header .button-franz {
   font-weight: bold;
 }
 
-@media only screen and (max-width: 600px) {
-  #story {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .story-image-container {
-    align-self: center;
-  }
-
-  .story-text-container {
-    align-items: center;
-  }
-
-  .story-image-container {
-    width: 20%;
-  }
-}
 
 /* Claudia's CSS */
 
@@ -526,38 +506,31 @@ margin-top: 13%;
 }
 footer {
   background-image: url(/images/footerimg.png);
-  padding: 50px;
-  position: relative;
-  width: 100%;
-  bottom: 0px;
+  background-size: cover;
 }
 
 .footertext {
   color: #fff;
-  font-size: 14px;
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  position: relative;
-  min-height: 1px;
-  max-width: 280px;
 }
 
 .footertop {
-  position: relative;
-  padding-bottom: 20px;
+flex: 1; 
+padding: 2rem; 
 }
+
 .footerinfo {
   color: white;
-  position: relative;
-  padding-bottom: 20px;
-  max-width: 280px;
+  flex: 1;
+  padding: 2rem;
 }
 
 .footernewsletter {
-  position: relative;
-  padding-bottom: 20px;
-  max-width: 400px;
+ flex: 1;
+ padding: 2rem;
+ max-width: 13rem;
 }
+
 .footerbutton {
   display: block;
   float: right;
@@ -618,32 +591,47 @@ a:link {
 .footernav-link:hover {
   color: #00e0d0;
 }
+
 .flex-container {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  margin-right: 60px;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-inline-start: 20%;
+  margin-inline-end: 20%;
+  flex-wrap: wrap;
 }
 
 .footerform {
   margin-top: 3px;
   padding-bottom: 27px;
-  margin-right: 100px;
 }
+
 .footerphone {
   background: url(/images/phone.png) 0 3px no-repeat;
 }
+
 .footerlocation {
-  background: url(/images/pin.png) 0 3px no-repeat;
-}
-.footerlogo {
-  height: 70px;
-  background: url(/images/logo.png) 50% 3px no-repeat;
-  background-position: 0 3px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 0.5rem 0;
 }
 
-.footerlogo h1 {
+.footerlocation img {
+  margin-right: 0.2rem;
+}
+
+.footer-logo {
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: center;
+padding: 1rem 0;
+}
+
+/* .footerlogo h1 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: lighter;
@@ -652,27 +640,56 @@ a:link {
   text-transform: lowercase;
   float: right;
   margin-right: 150px;
-}
+} */
 .footerinfo {
-  margin-right: 80px;
-  margin-left: 80px;
-  float: left;
-  width: 33.33333%;
+  display: flex;
+  flex-direction: column;
+  
 }
 
-.footerlocation,
-.footerphone {
-  padding-left: 29px;
-}
+
 .footertitle {
-  padding: 22px 0 33px;
-  font-size: 15px;
-  line-height: 1;
-  font-weight: 900;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
   text-transform: uppercase;
   color: white;
+  height: 50px;
 }
 
 .footerbottom {
   padding: 5px 20px;
+}
 
+
+/* Media queries */
+
+@media only screen and (max-width: 600px) {
+  #story {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .story-image-container {
+    align-self: center;
+    margin-inline-start: 0;
+  }
+
+  .story-text-container {
+    align-items: center;
+    margin-inline-end: 0;
+  }
+
+  .story-image-container {
+    width: 20%;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .footertitle {
+    height: auto;
+  }
+}
