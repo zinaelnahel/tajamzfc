@@ -1,0 +1,32 @@
+
+/* Media queries */
+
+@media only screen and (max-width: 600px) {
+    #story {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .story-image-container {
+      align-self: center;
+      margin-inline-start: 0;
+    }
+  
+    .story-text-container {
+      align-items: center;
+      margin-inline-end: 0;
+    }
+  
+    .story-image-container {
+      width: 20%;
+    }
+  
+    .flex-container {
+      flex-direction: column;
+    }
+  
+    .footertitle {
+      height: auto;
+    }
+  }

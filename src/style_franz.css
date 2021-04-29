@@ -1,0 +1,189 @@
+/* Franz' CSS */
+
+
+/* HEADER*/
+/* General */
+
+header {
+    background-image: url("/images/bgk-header.png");
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+header :any-link {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+header h1 {
+    font: bold 1.5rem "Roboto Slab", serif;
+}
+
+/* Navigation + Logo*/
+
+.nav-bar {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    font: 0.8rem "Roboto", sans-serif;
+    flex: 1;
+    flex-direction: row;
+    padding: 0.2rem;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.logo img {
+    margin: 0.5rem 0;
+}
+
+.logo-subheading {
+    padding: 0 0.4rem;
+    font-size: 1.3rem;
+    color: #16aac4;
+}
+
+nav {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+}
+
+nav a:hover {
+    color: #00e0d0;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.nav-list li {
+    padding: 0 0.5rem;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+}
+
+  /* Header text */
+
+.header-content {
+    align-self: center;
+    display: flex;
+    flex: 10;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5rem 0;
+    text-align: center;
+    width: 50%;
+}
+
+  .header-content * {
+    margin: 0.7rem auto;
+}
+
+.header-content hr {
+    border-width: 0;
+    background-color: #00e0d0;
+    color: #00e0d0;
+    height: 1px;
+    width: 10%;
+}
+
+.button-franz {
+    padding: 0.5rem 0.5rem;
+    color: #00e0d0;
+    background-color: transparent;
+    border: 1px solid #00e0d0;
+    border-radius: 5%;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+header .button-franz {
+    margin-top: 2rem;
+}
+
+.button-franz:hover {
+    box-shadow: 0 0 2px 2px #00e0d0;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+  /* Section "Story" */
+
+#story {
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.story-image-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem 2rem;
+    margin-inline-start: 20%;
+}
+
+.story-image-container img {
+    max-width: 100%;
+
+}
+
+.story-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 2rem;
+    margin-inline-end: 20%;
+  }
+  
+  .story-text-container * {
+    margin-bottom: 1.4rem;
+  }
+  
+  .subheading-franz {
+    font: bold 1rem "Roboto Slab", serif;
+    text-transform: uppercase;
+  }
+  
+  .story-media-container {
+    align-items: center;
+    background-image: url("/images/bgk-middle.png");
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: 2/1 / span2/3;
+    height: 80vh;
+  }
+  
+  .story-media-wrapper {
+    display:flex; 
+    flex-direction: column;
+  }
+  
+  .story-media-wrapper:hover {
+    text-shadow: 0 0 2px white;
+    cursor: pointer;
+  }
+  
+  .video-player-heading {
+    padding-top: 1.4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  
