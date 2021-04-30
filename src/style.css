@@ -147,7 +147,7 @@ table {
 /* General */
 
 header {
-  background-image: url("images/bgk-header.png");
+  background-image: url("../images/bgk-header.png");
   background-size: cover;
   color: white;
   display: flex;
@@ -302,7 +302,7 @@ header .button-franz {
 
 .story-media-container {
   align-items: center;
-  background-image: url("images/bgk-middle.png");
+  background-image: url("../images/bgk-middle.png");
   background-size: cover;
   color: white;
   display: flex;
@@ -454,7 +454,7 @@ header .button-franz {
 
 
 footer {
-  background-image: url(images/footerimg.png);
+  background-image: url("../images/footerimg.png");
   background-size: cover;
 }
 
@@ -560,7 +560,7 @@ a:link {
 }
 
 .footerphone {
-  background: url(images/phone.png) 0 3px no-repeat;
+  background: url("../images/phone.png") 0 3px no-repeat;
 }
 
 .footerlocation {
