@@ -477,12 +477,12 @@ td .button-franz {
   line-height: 22px;
   text-transform: uppercase;
   text-align: center;
+  text-align: left;
 }
 .section-contacts__clients {
   position: relative;
   min-height: 1px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 10px;
 
   width: 100%;
 }
@@ -512,7 +512,9 @@ td .button-franz {
 .section-contacts__textarea {
   height: 200px;
   margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
 }
+
 .section-contacts__button {
   bottom: 200px;
   position: static;
@@ -529,6 +531,7 @@ td .button-franz {
 }
 .section-contacts__client img {
   vertical-align: middle;
+  padding: 10px;
 }
 .section-contacts__button {
   display: inline-block;
@@ -709,4 +712,17 @@ a:link {
 .section-contacts__clients {
   margin-left: 600px;
   bottom: 515px;
+}
+.wrapper {
+  width: 500px;
+  padding: 10px;
+}
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+.box > * {
+  flex: 1 1 160px;
+  margin: 10px;
 }
