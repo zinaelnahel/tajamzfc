@@ -361,6 +361,11 @@ header .button-franz {
   margin: 0px;
 }
 
+.section-contacts__form {
+  max-height: 600px;
+  position: re;
+}
+
 .section-contacts__title {
   padding-bottom: 33px;
   font-size: 22px;
@@ -370,8 +375,15 @@ header .button-franz {
   line-height: 22px;
   text-transform: uppercase;
   text-align: center;
+  text-align: left;
 }
+.section-contacts__clients {
+  position: relative;
+  min-height: 1px;
+  padding: 10px;
 
+  width: 100%;
+}
 .section-contacts__input {
   display: block;
   margin-bottom: 5px;
@@ -389,16 +401,18 @@ header .button-franz {
   position: relative;
 }
 .section-contacts__feedback {
+  margin-top: 20px;
+  max-width: 450px;
+  margin-left: 80px;
   display: block;
-  margin-top: 60px;
-  max-width: 500px;
-  margin-left: 250px;
 }
 
 .section-contacts__textarea {
   height: 200px;
   margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
 }
+
 .section-contacts__button {
   bottom: 200px;
   position: static;
@@ -413,6 +427,36 @@ header .button-franz {
   max-width: 100%;
   margin-bottom: 60px;
 }
+
+.section-contacts__client img {
+  vertical-align: middle;
+  padding: 10px;
+}
+.section-contacts__button {
+  display: inline-block;
+  padding: 11px 14px;
+  outline: none;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border: 1px solid #00e0d0;
+  background: 0 0;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: 400;
+  color: #00e0d0;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: color 0.2s linear, border-color 0.2s linear,
+    -webkit-box-shadow 0.2s linear;
+  transition: box-shadow 0.2s linear, color 0.2s linear,
+    border-color 0.2s linear;
+  transition: box-shadow 0.2s linear, color 0.2s linear,
+    border-color 0.2s linear, -webkit-box-shadow 0.2s linear;
+}
+
+
 footer {
   background-image: url(/images/footerimg.png);
   padding: 50px;
@@ -565,5 +609,23 @@ a:link {
 .footerbottom {
   padding: 5px 20px;
 
+}
+
+.section-contacts__clients {
+  margin-left: 600px;
+  bottom: 515px;
+}
+.wrapper {
+  width: 500px;
+  padding: 10px;
+}
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+.box > * {
+  flex: 1 1 160px;
+  margin: 10px;
 }
 
