@@ -500,6 +500,10 @@ padding: 2rem;
   margin-top: 1rem;
 }
 
+.footersocials img {
+  max-width: 30px;
+}
+
 .footerinput {
   color: #fff;
   padding: 0.5rem 1rem;
