@@ -641,6 +641,17 @@ padding: 1rem 0;
 
   .footertitle {
     height: auto;
+    justify-content: center;
   }
+
+  .footer-logo {
+    justify-content: center;
+  }
+
+  .section-contacts__feedback {
+    display: flex;
+    flex-direction: column;
+  }
+
 }
 
